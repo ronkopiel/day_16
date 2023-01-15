@@ -206,17 +206,18 @@ nav {
   min-height: 42.088%;
 }
 .bottom-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: grid;
+  grid-template: 1fr / repeat(3,1fr);
+  /* align-items: center; */
   justify-content: center;
   padding: 0px;
+  height: 100%;
   width: 100%;
   min-height: 93.875%;
   /* min-height: 277.39px; */
 }
 .bottom-inner-container {
-  width: 33.3%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -229,10 +230,11 @@ nav {
   font-size: 32px;
   line-height: 38px;
   color: #212529;
+  
 }
 .bottom-paragraph {
   width: 90.628%;
-  height: 43.4%;
+  /* height: 43.4%; */
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -314,10 +316,10 @@ nav {
     min-height: 727px;
   }
   .bottom-container {
-    flex-direction: column;
     align-content: center;
     max-width: 100%;
     min-height: 70%;
+    grid-template: repeat(3,1fr) / 1fr;
   }
   .bottom-inner-container {
     width: 100%;
